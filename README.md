@@ -23,12 +23,11 @@ Web crawlers for the urban management fine in Shanghai
     ```
     scrapy crawl shfine -a district='pudong' -a max_page=3 -o pudong.csv -L WARNING
     ```
-    解释：
-        - `shfine` 代表"shanghai fine"
-        - `-a district='pudong'`：获取浦东区城管处罚信息
-        - `-a max_page=3`: 只爬取前三页
-        - `-o pudong.csv`: 将爬取的信息保存为`pudong.csv`.
-        - `-L WARNING`: 只显示级别为WARNING及以上的提示信息（scrapy废话太多了。。。）
+    - `shfine` 代表"shanghai fine"
+    - `-a district='pudong'`：获取浦东区城管处罚信息
+    - `-a max_page=3`: 只爬取前三页
+    - `-o pudong.csv`: 将爬取的信息保存为`pudong.csv`.
+    - `-L WARNING`: 只显示级别为WARNING及以上的提示信息（scrapy废话太多了。。。）
 
 
 
