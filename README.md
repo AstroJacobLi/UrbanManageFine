@@ -34,6 +34,9 @@ Web crawlers for the urban management fine in Shanghai
 - 注意！本项目仅支持MacOS！其他系统请自行更换`middelware.py`中的浏览器设置！
 ```
 
+### Possible Issue
+1. CSV文件里中文字的编码很可能有问题。
+
 ## Acknowledgement
 本项目受到以下文章的启发，在此表示感谢！
 1. https://blog.csdn.net/qq_43004728/article/details/84636468
