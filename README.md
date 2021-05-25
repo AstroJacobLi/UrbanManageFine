@@ -28,7 +28,7 @@ Web crawlers for the urban management fine in Shanghai
     - `-a max_page=3`: 只爬取前三页
     - `-o pudong.csv`: 将爬取的信息保存为`pudong.csv`.
     - `-L WARNING`: 只显示级别为WARNING及以上的提示信息（scrapy废话太多了。。。）
-3. 爬虫结果样例请见[`jingan.csv`](https://github.com/AstroJacobLi/UrbanManageFine/blob/main/jingan.csv).
+3. 爬虫结果样例请见[`jingAn.csv`](https://github.com/AstroJacobLi/UrbanManageFine/blob/main/jingAn.csv).
 
 ```diff
 - 注意！本项目仅支持MacOS！其他系统请自行更换`middelware.py`中的浏览器设置！
