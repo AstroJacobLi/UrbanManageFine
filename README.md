@@ -1,8 +1,9 @@
-# UrbanManageFine
-Web crawlers for the urban management fine in Shanghai 上海市城管行政罚款爬虫
+# UrbanManageFine 上海市城管行政罚款爬虫
+Web crawlers for the urban management fine in Shanghai 
 
-上海市城市管理行政执法局行政处罚信息公开：http://183.194.249.79/web/default.aspx
-浦东城管：http://183.194.249.79/web/search.aspx?keyword=&type=1&organ=b2327449-70d8-4478-9fc5-d6aa497b3b88
+> 上海市城市管理行政执法局行政处罚信息公开：http://183.194.249.79/web/default.aspx
+
+> 浦东城管：http://183.194.249.79/web/search.aspx?keyword=&type=1&organ=b2327449-70d8-4478-9fc5-d6aa497b3b88
 
 ### Basic Idea
 1. 不同区城管对应的网页URL是固定的，但该网页是动态网页，由javascript渲染。进行翻页操作后网页URL并不会改变，因此需要Selenium + Scrapy进行爬取。
@@ -19,15 +20,20 @@ Web crawlers for the urban management fine in Shanghai 上海市城管行政罚�
 ### Usage
 1. 将本项目克隆在本地：`git@github.com:AstroJacobLi/UrbanManageFine.git` 之后进入`./UrbanManageFine`文件夹。请检查`./UrbanManageFine/chromedriver`是否存在。
 2. 进入`./UrbanManageFine/shfine`，在该文件夹下执行：
-```
-scrapy crawl shfine -a district='pudong' -a max_page=3 -o pudong.csv -L WARNING
-```
-解释：
-    - `shfine `代表"shanghai fine"
-    - `-a district='pudong'`：获取浦东区城管处罚信息
-    - `-a max_page=3`: 只爬取前三页
-    - `-o pudong.csv`: 将爬取的信息保存为`pudong.csv`.
-    - `-L WARNING`: 只显示级别为WARNING及以上的提示信息（scrapy废话太多了。。。）
+    ```
+    scrapy crawl shfine -a district='pudong' -a max_page=3 -o pudong.csv -L WARNING
+    ```
+    解释：
+        - `shfine` 代表"shanghai fine"
+
+        - `-a district='pudong'`：获取浦东区城管处罚信息
+
+        - `-a max_page=3`: 只爬取前三页
+
+        - `-o pudong.csv`: 将爬取的信息保存为`pudong.csv`.
+
+        - `-L WARNING`: 只显示级别为WARNING及以上的提示信息（scrapy废话太多了。。。）
+
 
 
 ```diff
