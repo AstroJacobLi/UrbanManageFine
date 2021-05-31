@@ -35,7 +35,7 @@ Web crawlers for the urban management fine in Shanghai
 ```
 
 ### Possible Issue
-1. CSV文件里中文字的编码很可能有问题。
+1. CSV文件里中文字的编码用excel打开有问题。解决方法：用pandas打开csv表格之后保存成excel格式即可。
 
 ### Acknowledgement
 本项目受到以下文章的启发，在此表示感谢！
