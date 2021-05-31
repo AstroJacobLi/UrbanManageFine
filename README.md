@@ -21,7 +21,7 @@ Web crawlers for the urban management fine in Shanghai
 1. 将本项目克隆在本地：`git@github.com:AstroJacobLi/UrbanManageFine.git` 之后进入`./UrbanManageFine`文件夹。请检查`./UrbanManageFine/chromedriver`是否存在。
 2. 进入`./UrbanManageFine/shfine`，在该文件夹下执行：
     ```
-    scrapy crawl shfine -a district='pudong' -a max_page=3 -o pudong.csv -L WARNING
+    scrapy crawl shfine -a district='pudong' -a max_page=1 -o pudong.csv -L WARNING
     ```
     - `shfine` 代表"shanghai fine"
     - `-a district='pudong'`：获取浦东区城管处罚信息

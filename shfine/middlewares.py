@@ -37,7 +37,7 @@ class SeleniumMiddlerware(object):
             print('Next page:', current_num + 1)
 
             if spider.max_page is not None:
-                if current_num >= spider.max_page:
+                if current_num >= int(spider.max_page):
                     raise CloseSpider(
                         f'STOPPED! Already crawled {current_num} pages!')
 

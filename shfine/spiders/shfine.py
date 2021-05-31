@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import time
+import unicodedata
 from bs4 import BeautifulSoup
 from shfine.items import ShfineItem
 
@@ -100,5 +101,8 @@ class ShfineSpider(scrapy.Spider):
                                  [item.text.strip() for item in small_soup.select('table td')])
                              )
             page_info['company_name'] = ''
+        
+        for key in page_info.keys():
+            page_info[key] = unicodedata.normalize("NFKD", page_info[key])
 
         yield page_info
